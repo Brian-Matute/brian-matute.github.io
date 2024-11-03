@@ -1,29 +1,89 @@
 body {
-    margin: 0 auto;
     max-width: 960px;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas:
-    "masthead masthead"
-    "nav text"
-    "main main"
-    "footer footer"
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "masthead"
+    "nav"
+    "bulk"
+    "footer";
 }
 
 header {
-    grid-area: masthead;
+    grid-area:masthead;
 }
 
 nav {
-    grid-area: nav;
+    grid-area:nav;
 }
+
 main {
-    grid-area: main;
+    grid-area: bulk;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "intro"
+    "geo"
+    "pop";
 }
 
 #intro {
     grid-area: intro;
+}
+
+#geo {
+    grid-area: geo;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "name     name"
+    "location location"
+    "envior   land";
+}
+
+#geo h3 {
+    grid-area: name;
+}
+
+#geo #location {
+    grid-area: location;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+    "locname locname"
+    "coor map";
+}
+
+#geo #location h3 {
+    grid-area: locname;
+}
+
+#geo #location h3 > p {
+    grid-area: coor;
+}
+
+#grid #location p > P {
+    grid-area: coors
+}
+
+#geo figure {
+    grid-area: map;
+}
+
+#geo #envior {
+    grid-area: envior;
+}
+
+#geo #land {
+    grid-area: land;
+}
+
+#pop {
+    grid-area: pop;
 }
 
 footer {
