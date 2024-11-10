@@ -57,18 +57,22 @@ main {
 
 #intro h2 {
     font-family: "Paprika", "Helvetica", "Arial", sans-serif;
+    margin-left: 100px;
 }
 
 #intro {
     padding-top: 10px;
     padding-left: 200px;
     padding-right: 200px;
+    padding-bottom: 10px;
     background-color: #ddd;
 }
 
 #geo {
     grid-area: geo;
+    margin-top: 20px;
     background-color: #eee;
+    padding-top: 10px;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr;
@@ -81,6 +85,13 @@ main {
 #geo h2 {
     grid-area: masthead;
     font-family: "Paprika", "Helvetica", "Arial", sans-serif;
+    padding-left: 300px;
+    margin-bottom: 0px;
+}
+
+#geo figure {
+    margin-left: 90px;
+    color: #8ba3f8;
 }
 
 #geo img {
@@ -91,12 +102,37 @@ main {
     grid-area: loc;
 }
 
+#geo #location h3 {
+    margin-left: 200px;
+    margin-top: 0;
+}
+
+#geo #location p {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
 #geo #land {
     grid-area: land;
+    margin-left: 50px;
+}
+
+#geo #land h3 {
+    margin-left: 90px;
+}
+
+#geo #land th,td {
+    border: 2px solid #555;
+}
+
+#geo #envior h3 {
+    margin-left: 80px;
 }
 
 #geo #envior {
     grid-area: envior;
+    margin-right: 100px;
+    margin-bottom: 10px;
 }
 
 #pop {
@@ -126,6 +162,9 @@ main {
 
 #pop #age {
     grid-area: img;
+}
+#pop figure {
+    color: #8ba3f8;
 }
 
 #pop img {
