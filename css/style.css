@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Paprika&display=swap');
+
 body {
+    font-family: "Alegreya", "Helvetica", "Arial", sans-serif;
     line-height: 1.5;
+    font-size: 16px;
+    color: #222;
     max-width: 960px;
     display: grid;
     grid-gap: 20px;
@@ -11,9 +16,27 @@ body {
     "footer   footer";
 }
 
+a,
+a:link {
+    color: #071078;
+}
+
+a:visited {
+    color: #555;
+}
+
+a:hover {
+    color: #BC002D;
+}
+
+a:active {
+    color: #d4d10c;
+}
+
 header {
     grid-area: masthead;
     background-color: #777;
+    font-family: "Paprika", "Helvetica", "Arial", sans-serif;
 }
 
 nav {
@@ -23,33 +46,73 @@ nav {
 
 main {
     grid-area: main;
-    /*display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "intro intro"
-    "geo   geo"
-    "pop   pop"*/
-
 }
 
-#intro {
-    grid-area: intro;
+#intro h2 {
+    font-family: "Paprika", "Helvetica", "Arial", sans-serif;
 }
 
 #geo {
     grid-area: geo;
     display: grid;
     grid-gap: 20px;
-    margin: 0 auto;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "loc img"
-    "envir land";
+    "masthead masthead"
+    "loc      loc"
+    "land     envior";
 }
 
-#g
+#geo h2 {
+    grid-area: masthead;
+    font-family: "Paprika", "Helvetica", "Arial", sans-serif;
+}
+
+#geo img {
+    border: 1px solid #555;
+}
+
+#geo #location {
+    grid-area: loc;
+}
+
+#geo #land {
+    grid-area: land;
+}
+
+#geo #envior {
+    grid-area: envior;
+}
+
 #pop {
-    grid-area: pop;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "masthead masthead"
+    "ethnic   religions"
+    "img      img";
+}
+
+#pop h2 {
+    grid-area: masthead;
+    font-family: "Paprika", "Helvetica", "Arial", sans-serif;
+}
+
+#pop #ethnic {
+    grid-area: ethnic;
+}
+
+#pop #religions {
+    grid-area: religions;
+}
+
+#pop #age {
+    grid-area: img;
+}
+
+#pop img {
+    border: 1px solid #555;
 }
 
 footer {
