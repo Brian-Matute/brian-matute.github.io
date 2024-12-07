@@ -1,1 +1,36 @@
- 
+body {
+    font-family: "Alegreya", "Helvetica", "Arial", sans-serif;
+    max-width: 960px;
+    background-color: #eee;
+    color: #222;
+    margin-left: 300px;
+}
+
+td {
+    border: 2px solid #555;
+}
+
+li {
+    color: #BC002D;
+}
+
+img {
+    border: 2px solid #222;
+}
+
+a,
+a:link {
+    color: #071078;
+}
+
+a:visited {
+    color: #555;
+}
+
+a:hover {
+    color: #BC002D;
+}
+
+a:active {
+    color: #d4d10c;
+}
