@@ -153,6 +153,11 @@ img {
     margin-right: 200px;
 }
 
+#newsbreak {
+    background-color: #eee;
+    padding: 20px;
+}
+
 footer {
     grid-area: footer;
     background-color: #8ba3f8;
