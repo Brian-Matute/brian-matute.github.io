@@ -55,6 +55,57 @@ main {
     grid-area: main;
 }
 
+#resume main {
+    grid-area: main;
+    display: grid;
+    grid-gap: 20px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "contact    summary"
+    "skills     skills"
+    "experience experience"
+    "education  language"
+    "info       info";
+}
+
+#resume #contact {
+    grid-area: contact;
+    background-color: #eee;
+}
+
+#resume #summary {
+    grid-area: summary;
+    background-color: #eee;
+}
+
+#resume #skills {
+    grid-area: skills;
+    background-color: #ddd;
+}
+
+#resume #experience {
+    grid-area: experience;
+    background-color: #eee;
+}
+
+#resume #education {
+    grid-area: education;
+    background-color: #ddd;
+}
+
+#resume #language {
+    grid-area: language;
+    background-color: #ddd;
+}
+
+#resume #info {
+    grid-area: info;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-color: #eee;
+}
+
 #intro h2 {
     font-family: "Paprika", "Helvetica", "Arial", sans-serif;
     margin-left: 300px;
